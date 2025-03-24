@@ -28,47 +28,7 @@
 
 
 
-// Cypress.Commands.add("login", (username, password) => {
-//  //   cy.visit("/");
-//     // cy.get('[type="text"]').type(username);
-//     // cy.get('[name="password"]').type(password);  //[name="password"]
-//     // cy.get('[class="btn"]').click();
 
-//     //for practice automation
-//     cy.get('[name="username"]').clear().type(username);
-//     cy.get('[name="password"]').clear().type(password);  //[name="password"]
-//     cy.get('[class="btn"]').click();
-//   });
-// Cypress.Commands.add('login', (username, password) => {
-//   //cy.log(`Username: ${username}, Password: ${password}`);
-//  // console.log(`Username: ${username}, Password: ${password}`);
-  
-//   cy.get('[name="username"]').clear().type(username).should('be.visible'); // This will fail if username is undefined
-//   cy.get('[name="password"]').clear().type(password).should('be.visible') // This will fail if password is undefined
-//   cy.get('[class="btn"]').click();
-// });
-
-  
-
-//   Cypress.Commands.add("logout", () => {
-//     cy.get('[style="color:#ffffff"]').click({force:true});
-//     //cy.get('.oxd-dropdown-menu >li:nth-child(4)').click()
-//     cy.log("User Student has logged out successfully");
-//     //cy.pause()
-   
-//   });  
-
-
-//   Cypress.Commands.add('conduit',()=>{
-//       cy.visit('https://conduit.bondaracademy.com/')
-//        cy.get(':nth-child(2)>[class="nav-link"]').click()
-//        cy.get('[placeholder="Email"]').type('snaveen2112@gmail.com')
-//        cy.get('[type="password"]').type('Snaveen@1996')
-//        cy.get('[type="submit"]').click()
-//   })
-
-
-  // cypress/support/commands.js
 
 // cypress/support/commands.js
 
