@@ -6,10 +6,16 @@ module.exports = defineConfig({
     defaultCommandTimeout : 10000,
     
     //baseUrl : 'https://practicetestautomation.com/practice-test-login/',
-    username : "student",
-    pwds : "Password123",
-
+    //username : "student",
+    //pwds : "Password123",
+    baseUrl: 'https://www.medicines.org.uk/emc',
     
+    env: {
+      username: "alexmurphywork@gmail.com",
+      password: "Password1!",
+    },
+    video: true,
+    videosFolder: 'cypress/videos',
     failOnStatusCode: false,
   
     setupNodeEvents(on, config) {
