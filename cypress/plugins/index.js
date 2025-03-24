@@ -1,34 +1,10 @@
 
-const readXlsx = require('./read-xlsx')
-// module.exports = (on,config) => {
-//     on('task', {
-//         'readXlsx' : readXlsx.read
-//     })
-// }
-
-// const fs = require('fs');
-// const path = require('path');
-
-// module.exports = (on, config) => {
-//   on('task', {
-//     'readXlsx' : readXlsx.read,
-//     saveLogo({ filePath, data }) {
-//       try {
-//         fs.writeFileSync(filePath, data, 'binary'); // Save the logo as binary
-//         return null; // Return null to indicate success
-//       } catch (err) {
-//         throw new Error(`Failed to save logo: ${err.message}`);
-//       }
-//     },
-//   });
-// };
-
 const fs = require('fs');
 const path = require('path');
 
 module.exports = (on, config) => {
   on('task', {
-    'readXlsx' : readXlsx.read,
+  //  'readXlsx': readXlsx.read,
     saveLogo({ filePath, data }) {
       try {
         const dir = path.dirname(filePath); // Get the directory path
@@ -38,7 +14,7 @@ module.exports = (on, config) => {
         fs.writeFileSync(filePath, data, 'binary'); // Save the logo as binary
         return null; // Return null to indicate success
       } catch (err) {
-        throw new Error(`Failed to save logo: ${err.message}`);
+        throw new Error(`Failed to save logo: ${err.message}`); // Fixed syntax
       }
     },
   });
