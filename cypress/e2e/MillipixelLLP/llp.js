@@ -22,7 +22,7 @@ class CompaniesPage {
     }
   
     extractCompanyData() {
-      cy.extractCompanyData();
+      cy.extractCompaniesFromA_B_Z();
     }
   
     logOut() {
